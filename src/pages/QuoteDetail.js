@@ -32,8 +32,8 @@ const QuoteDetail = () => {
     return <p className="centered">{error}</p>;
   }
 
-  if (!loadedQuote.text) {
-    return <p className="centered">{error}</p>;
+  if (!loadedQuote) {
+    return <p>No quote found!</p>;
   }
 
   return (
