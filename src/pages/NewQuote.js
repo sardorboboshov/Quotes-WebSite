@@ -21,7 +21,7 @@ const NewQuote = () => {
     history.push("/quotes");
   };
   return (
-    <QuoteForm isLoading={status == "pending"} onAddQuote={addQuoteHandler} />
+    <QuoteForm isLoading={status === "pending"} onAddQuote={addQuoteHandler} />
   );
 };
 
